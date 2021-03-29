@@ -1,0 +1,85 @@
+body::before{
+    background:  url(../img/b6.jpg) no-repeat center center/cover;
+    content: "";
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    /* background: url("../img/b6.jpg") no-repeat center center/cover; */
+    /* position: revert; */
+}
+.outerbox{
+    text-align: center;
+    background-color: rgb(111 217 176);
+    margin: 17px;
+    padding: 17px 30px;
+    border-radius: 19px;
+    box-shadow: 4px 4px 7px #3b3849;
+}
+.question{
+    margin: 15px;
+    padding: 7px 2px 7px 2px;
+    font-size: xx-large;
+}
+.options{
+     display: flex;
+    flex-flow: column wrap;
+    width: 49%;
+}
+.divid{
+    display: flex;
+    flex-flow: row;
+}
+.btn{
+    margin: 11px 2px 2px 8px;
+    padding: 2px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    font-size: large;
+    border-radius: 19px;
+    box-shadow: 4px 4px 7px rgb(11 54 65);
+    background-color: rgb(255, 252, 212);
+}
+.divsubmit{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+#submit{
+    /* text-decoration: none; */
+    padding: 2px 21px 2px 21px;
+    border-radius: 10px;
+    background-color: #97ff51;
+    /* color: red; */
+    box-shadow: 4px 4px 7px black;
+}
+#submitbtn{
+    text-decoration: none;
+    color: black;
+}
+@media (max-width: 650px){
+    .btn{
+    font-size: x-small;
+    }
+    .question{
+        font-size: xx-large;
+    }
+}
+@media (max-width:420px){
+    .btn{
+        font-size: xx-small;
+    }
+}
+@media (max-width:370px){
+    .btn{
+        font-size: 6px;
+    }
+}
